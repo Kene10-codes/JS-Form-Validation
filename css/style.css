@@ -59,14 +59,57 @@ body {
     font-family: inherit;
     font-size: 14px;
     padding: 10px;
+    outline: none;
     width: 100%;
    
+}
+
+.form-control.success input{
+    border-color: #2ecc71;
+}
+
+.form-control.error input{
+    border-color: #e74c3c;
 }
 
 .form-control i{
     position: absolute;
     top: 40px;
-    right: 10px;
+    right: 10px; 
     color: black;
-    
+    visibility: hidden;
+}
+
+.form-control.success i.fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.form-control.error small{
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.container__btn {
+    background: rgb(46, 46, 163);
+    border: 2px solid  rgb(29, 29, 167);
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    padding: 10px;
 }
